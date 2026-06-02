@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The World | A Travel Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="home">
+
+    <header>
+        <div class="navbar container">
+            <a href="#home" class="logo">The <span>World</span></a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="menu-icon" id="menuIcon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content container">
+            <h1>Discover The World, One Story At A Time</h1>
+            <p>Read about hidden gems, travel tips, and breathtaking adventures across the globe.</p>
+            <a href="#blog-posts" class="btn">Explore Stories</a>
+        </div>
+    </section>
+
+    <section class="page-section container" id="blog-posts">
+        <h2 class="section-title">Recent Adventures</h2>
+        
+        <div class="blog-grid">
+            <article class="blog-card clickable-card" data-location="rishikesh">
+                <div class="card-img">
+                    <img src="file:///C:/Users/manis/OneDrive/Desktop/rishikesh.jpg" alt="Rishikesh River Rafting">
+                    <span class="category">Adventure</span>
+                </div>
+                <div class="card-content">
+                    <span class="date">June 1, 2026</span>
+                    <h3>Rafting the Roaring Ganges</h3>
+                    <p>Conquering the freezing rapids of Shivpuri and exploring the high-octane river paths of Rishikesh...</p>
+                    <div class="card-footer">
+                        <span class="read-more-link">Read Guide <i class="fas fa-arrow-right"></i></span>
+                        <button class="like-btn" onclick="event.stopPropagation();"><i class="far fa-heart"></i> <span class="like-count">124</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card clickable-card" data-location="mussoorie">
+                <div class="card-img">
+                    <img src="file:///C:/Users/manis/OneDrive/Desktop/mussoorie.jpeg" alt="Mussoorie Hills">
+                    <span class="category">Mountains</span>
+                </div>
+                <div class="card-content">
+                    <span class="date">May 28, 2026</span>
+                    <h3>Escape to the Queen of Hills</h3>
+                    <p>A quiet stroll through the misty paths of Landour and the historic ridges overlooking the Doon Valley...</p>
+                    <div class="card-footer">
+                        <span class="read-more-link">Read Guide <i class="fas fa-arrow-right"></i></span>
+                        <button class="like-btn" onclick="event.stopPropagation();"><i class="far fa-heart"></i> <span class="like-count">89</span></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="blog-card clickable-card" data-location="nainital">
+                <div class="card-img">
+                    <img src="file:///C:/Users/manis/OneDrive/Desktop/naintal.jpg" alt="Nainital Lake">
+                    <span class="category">Lakes</span>
+                </div>
+                <div class="card-content">
+                    <span class="date">May 15, 2026</span>
+                    <h3>The Emerald Waters of Naini</h3>
+                    <p>Uncovering local myths, historical lakeside shrines, and panoramic cable-car views across Kumaon...</p>
+                    <div class="card-footer">
+                        <span class="read-more-link">Read Guide <i class="fas fa-arrow-right"></i></span>
+                        <button class="like-btn" onclick="event.stopPropagation();"><i class="far fa-heart"></i> <span class="like-count">95</span></button>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="page-section container" id="destinations">
+        <h2 class="section-title">Explore Destinations</h2>
+        <div class="destinations-grid">
+            <div class="dest-card clickable-card" data-location="nainital">
+                <img src="file:///C:/Users/manis/OneDrive/Desktop/naintal.jpg" alt="Nainital">
+                <div class="dest-overlay">
+                    <h4>Nainital, India</h4>
+                    <p>View Details</p>
+                </div>
+            </div>
+            <div class="dest-card clickable-card" data-location="mussoorie">
+                <img src="file:///C:/Users/manis/OneDrive/Desktop/mussoorie.jpeg" alt="Mussoorie">
+                <div class="dest-overlay">
+                    <h4>Mussoorie, India</h4>
+                    <p>View Details</p>
+                </div>
+            </div>
+            <div class="dest-card clickable-card" data-location="rishikesh">
+                <img src="file:///C:/Users/manis/OneDrive/Desktop/rishikesh.jpg" alt="Rishikesh">
+                <div class="dest-overlay">
+                    <h4>Rishikesh, India</h4>
+                    <p>View Details</p>
+                </div>
+            </div>
+            <div class="dest-card clickable-card" data-location="shimla">
+                <img src="file:///C:/Users/manis/OneDrive/Desktop/shimla.jpg" alt="Shimla">
+                <div class="dest-overlay">
+                    <h4>Shimla, India</h4>
+                    <p>View Details</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section container" id="about">
+        <h2 class="section-title">About The Blogger</h2>
+        <div class="about-wrapper">
+            <div class="about-img">
+                <img src="file:///C:/Users/manis/OneDrive/Desktop/radha.2.jpeg" alt="Blogger Profile Image">
+            </div>
+            <div class="about-text">
+                <h3>Hey there, I'm Your Name!</h3>
+                <br>
+                <p>I am a full-time travel storyteller, adventure seeker, and whitewater enthusiast. Whether I'm navigating roaring river rapids, trekking through rugged rocky landscapes, or exploring hidden local cultures, I live for the thrill of the outdoors.</p>
+                <p>The World was born out of a passion to document these raw moments and inspire others to step out of their comfort zones. From high-adrenaline watersports to serene mountain peaks, follow along as I explore the wildest corners of the map!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section container" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Let's Collaborate</h3>
+                <p>Have questions about an adventure route? Want to work together on an upcoming travel campaign? Drop a line or swing by the base camp!</p>
+                
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Base Camp</h4>
+                        <p>123 Nomad Way, Suite 404,<br>Wanderland, CA 94016</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Me</h4>
+                        <p>hello@wanderlustblog.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h4>Call Directly</h4>
+                        <p>+1 (555) 019-2834</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully! (This is a preview)');">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="john@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me about your next adventure..." required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="travel-modal-overlay" id="travelModal">
+        <div class="travel-modal-box">
+            <button class="share-modal-btn" id="shareModal" title="Share Destination"><i class="fas fa-share-alt"></i></button>
+            <button class="close-modal-btn" id="closeModal">&times;</button>
+            
+            <div class="modal-banner-img">
+                <img id="modalImg" src="" alt="Location Image">
+                <h2 id="modalTitle">Location Title</h2>
+            </div>
+            <div class="modal-main-body">
+                <div class="modal-info-sidebar">
+                    <div class="sidebar-block">
+                        <i class="fas fa-calendar-alt"></i>
+                        <div>
+                            <h5>Best Time to Visit</h5>
+                            <p id="modalBestTime">Loading...</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-block">
+                        <i class="fas fa-wallet"></i>
+                        <div>
+                            <h5>Budget Level</h5>
+                            <p id="modalBudget">Loading...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-text-content">
+                    <h3>Overview</h3>
+                    <p id="modalOverview">Loading overview...</p>
+                    <hr>
+                    <h3>Must-See Attractions</h3>
+                    <ul class="modal-list-highlights" id="modalAttractions">
+                        </ul>
+                    <hr>
+                    <h3>Insider Pro-Tip</h3>
+                    <blockquote class="modal-tip-box" id="modalTip">
+                        Loading tip...
+                    </blockquote>
+                    
+                    <hr>
+                    
+                    <h3>Community Discussions</h3>
+                    <div class="comments-section">
+                        <div class="comments-container" id="commentsContainer">
+                            </div>
+                        <form class="modal-comment-form" id="commentForm">
+                            <div class="form-row">
+                                <input type="text" id="commenterName" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-row">
+                                <textarea id="commenterText" rows="3" placeholder="Share your thoughts or ask a question..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn-submit-comment">Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content container">
+            <p>&copy; 2026 The World. Built with adventure.</p>
+            <div class="socials">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
